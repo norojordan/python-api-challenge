@@ -1,8 +1,8 @@
 # python-api-challenge
 
 
-Part I - WeatherPy
-In this example, create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, utilize a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
+# Part I - WeatherPy
+In this example, I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I used a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
 A series of scatter plots was created to showcase the following relationships:
 
 Temperature (F) vs. Latitude
@@ -11,7 +11,7 @@ Cloudiness (%) vs. Latitude
 Wind Speed (mph) vs. Latitude
 
 After each plot, a sentence or two explains what the code is analyzing.
-The second requirement is to run linear regression on each relationship. This time, separate the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+The second requirement is to run linear regression on each relationship. This time, I separated the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 Northern Hemisphere - Temperature (F) vs. Latitude
 Southern Hemisphere - Temperature (F) vs. Latitude
@@ -23,7 +23,8 @@ Northern Hemisphere - Wind Speed (mph) vs. Latitude
 Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
 After each pair of plots, take the time to explain what the linear regression is modeling. For example, describe any relationships you notice and any other analysis you may have.
-Your final notebook must:
+
+The final notebook included the following:
 
 Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
 Perform a weather check on each of the cities using a series of successive API calls.
@@ -31,22 +32,16 @@ Include a print log of each city as it's being processed with the city number an
 Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
 
-Part II - VacationPy
-Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+# Part II - VacationPy
+Next, I used my skills in working with weather data to plan future vacations. I used jupyter-gmaps and the Google Places API for this part of the assignment.
 
 
-Note: Remember that any API usage beyond the $200 credit will be charged to your personal account. You can set quotas and limits to your daily requests to be sure you can't be charged. Check out Google Maps Platform Billing and Manage your cost of use for more information.
-
-
-Note: if you having trouble displaying the maps, try running jupyter nbextension enable --py gmaps in your environment and retry.
-
-
-To complete this part of the assignment,you will need to do the following:
+To complete this part of the assignment, the following steps were accomplished:
 
 
 1. Create a heat map that displays the humidity for every city from Part I.
 
-2. Narrow down the DataFrame to find your ideal weather condition which include temperatues between 75 and 85 degrees, humidity less than 30% and zero cloudiness.
+2. Narrow down the DataFrame to find your ideal weather condition which include temperatues between 75 and 85 degrees, humidity less than 50% and cloudiness less than 50%.
 
 3. Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
 
